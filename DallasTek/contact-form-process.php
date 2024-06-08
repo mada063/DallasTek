@@ -15,17 +15,17 @@ function clean_string($string) {
 
 if (isset($_POST['Email'])) {
     // Initialization
-    $email_to = "mathias.eikefet.dallas@outlook.com";
+    $email_to = "mathias@dallastek.no";
     $email_subject = "Melding fra kontaktskjema";
 
     // Validation
     if (!isset($_POST['Name']) || !isset($_POST['Email']) || !isset($_POST['Message'])) {
-        problem('We're sorry, but there appears to be a problem with the form you submitted.');
+        problem('We\'re sorry, but there appears to be a problem with the form you submitted.');
     }
 
-    $name = trim($_POST['Name']);
-    $email = trim($_POST['Email']);
-    $message = trim($_POST['Message']);
+    $name = htmlspecialchars(trim($_POST['Name']));
+    $email = htmlspecialchars(trim($_POST['Email']));
+    $message = htmlspecialchars(trim($_POST['Message']));
 
     $error_message = "";
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -55,8 +55,13 @@ if (isset($_POST['Email'])) {
     $headers = 'From: ' . $email . "\r\n" .
                'Reply-To: ' . $email . "\r\n" .
                'X-Mailer: PHP/' . phpversion();
-    mail($email_to, $email_subject, $email_message, $headers);
 
-    echo 'Takk for at du tok kontakt! Vi vil svare deg snart.';
+    // Send email and check for success
+    if(mail($email_to, $email_subject, $email_message, $headers)) {
+        echo 'Takk for at du tok kontakt! Vi vil svare deg snart.';
+    } else {
+        echo 'Beklager, det oppstod en feil ved sending av meldingen. Vennligst prøv igjen senere.';
+        error_log("Mail failed to send from $email to $email_to on " . date('Y-m-d H:i:s'));
+    }
 }
 ?>
