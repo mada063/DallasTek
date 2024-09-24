@@ -10,12 +10,25 @@
       "StackName": "amplify-dallastek2-dev-4ca80",
       "StackId": "arn:aws:cloudformation:eu-north-1:654654299314:stack/amplify-dallastek2-dev-4ca80/d9d389a0-7a7b-11ef-bcd5-06a40161f783",
       "AmplifyAppId": "d35k9mh3dp2pt4"
+    }
+  },
+  "dallasnext": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-dallastek-dallasnext-e54ba-authRole",
+      "UnauthRoleArn": "arn:aws:iam::654654299314:role/amplify-dallastek-dallasnext-e54ba-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::654654299314:role/amplify-dallastek-dallasnext-e54ba-authRole",
+      "Region": "eu-north-1",
+      "DeploymentBucketName": "amplify-dallastek-dallasnext-e54ba-deployment",
+      "UnauthRoleName": "amplify-dallastek-dallasnext-e54ba-unauthRole",
+      "StackName": "amplify-dallastek-dallasnext-e54ba",
+      "StackId": "arn:aws:cloudformation:eu-north-1:654654299314:stack/amplify-dallastek-dallasnext-e54ba/7738eb70-7aab-11ef-a7d5-0aaf799639e9",
+      "AmplifyAppId": "d1gn1hu0cg0htl"
     },
     "categories": {
       "hosting": {
         "amplifyhosting": {
-          "appId": "d35k9mh3dp2pt4",
-          "type": "manual"
+          "appId": "d1gn1hu0cg0htl",
+          "type": "cicd"
         }
       }
     }

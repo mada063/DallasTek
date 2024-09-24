@@ -4,12 +4,6 @@ import StartOverlay from "@/components/StartOverlay";
 import Header from '@/components/Header';
 import { LocalBusiness, WithContext } from 'schema-dts';
 
-const inter = localFont({
-  src: "./fonts/inter.ttf",
-  variable: "--font-inter",
-  weight: "100 900",
-});
-
 export const metadata = {
   title: "Dallas Tek - Løsningen for din bedrift",
   description: "Dallas Tek - Din løsning for bedrift konsultering, utvikling, design, og digital tansformering i Bergen.",
@@ -44,7 +38,7 @@ const jsonLd = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable}`}>
+      <body>
         <StartOverlay />
         <Header />
         {children}
