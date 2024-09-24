@@ -1,0 +1,35 @@
+.project-container-wrapper{
+    padding-left: 10vw;
+    padding-right: 10vw;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding-bottom: 10vh;
+}
+
+.project-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.project-text {
+    max-width: 50vw;
+}
+.project-welcome-img{
+    max-width: 50vw;
+    max-height: 90vh;
+    border-radius: 5px;
+}
+
+.project-parallax-img-1{
+    transition: transform 0.1s ease-out; 
+    will-change: transform; 
+}
+
+.project-parallax-img-1 {
+    transform-origin: center; /* Ensure the image scales from the center */
+}

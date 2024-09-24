@@ -1,0 +1,87 @@
+.service-landing {
+    padding-left: 10vw;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding-bottom: 10vh;
+}
+
+.service-welcome-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.service-title-container {
+    width: 40%; /* Title section takes up 40% of the width */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align title and paragraph to the left */
+}
+
+.service-element {
+    width: 40%; /* Each image takes up 48% of the 60% width of the container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden; /* Ensure that any transformation effects stay within bounds */
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30vh);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.service-elements-img {
+    width: 60%; /* Image section takes up 60% of the width */
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+    justify-content: center;
+    opacity: 0; /* Initially hidden */
+    animation: fadeInUp 0.5s ease-out;
+    animation-delay: 0.5s; /* Start animation after 2 seconds */
+    animation-fill-mode: forwards; /* Ensure the final state persists */
+    gap: 1vw;
+}
+
+.parallax-img-1, .parallax-img-2 {
+    transition: transform 0.1s ease-out; /* Smooth movement for parallax effect */
+    will-change: transform; /* Hint to the browser to optimize the transform for smooth performance */
+}
+
+.parallax-img-1 {
+    height: 70vh;
+    border-radius: 5px;
+    margin-top: 25vh;
+    transform-origin: center; /* Ensure the image scales from the center */
+}
+
+.parallax-img-2 {
+    width: 30vh; /* Slightly smaller image */
+    height: auto;
+    border-radius: 5px;
+    border-bottom-right-radius: 200px;
+    transform-origin: center; /* Ensure the image scales from the center */
+}
+
+.container-parallax {
+    transition: transform 0.1s ease-out; /* Smooth movement for the container */
+    will-change: transform; /* Optimize for the transform */
+}
+

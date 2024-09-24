@@ -1,0 +1,16 @@
+.divider-light-container {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;     /* Centers vertically */
+  width: 80%;
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+  padding-bottom: 10vh;
+}
+
+.divider-light-box {
+  width: 100%;
+  height: 2px;
+  background-color: var(--text-color);
+  position: relative;
+}

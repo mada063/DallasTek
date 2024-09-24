@@ -1,95 +1,44 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import HomeWelcome from "./home/components/HomeWelcome"
+import CubeContainer from "./home/components/CubeContainer";
+import ColorApplier from './home/components/ColorApplier';
+import { ColorProvider } from './home/components/ColorContext';
+import CustomCursor from '@/components/CustomCursor';
+import Customers from "./home/components/Customers";
+import Services from "./home/components/Services";
+import Solutions from "./home/components/Solutions";
+import Skills from "./home/components/Skills";
+import Divider from "./home/components/Divider";
+import ContactDallas from "./home/components/ContactDallas";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+
+export const metadata = {
+  title: 'Dallas Tek - Hjem',
+  description: "Dallas Tek - Din løsning for bedrift konsultering, utvikling, design, og digital tansformering i Bergen.",
+  keywords: "Dallas Tek, Dallas tech, IT-løsninger, IT-konsultasjon, IT-tjenester, Webutvikling, Programvareutvikling, Apputvikling, Teknologirådgivning, IT-støtte, digitalisering, webutvikling, web-design, bedriftkonsultasjon, utvikling, design, digital transformasjon, IT-løsninger Bergen, Webutvikling Bergen, IT-konsulent Bergen, Programvareutvikling Norge, Digitalisering Bergen, IT-tjenester i nærheten, Webdesign Bergen, IT-rådgivning Norge, IT-støtte Bergen, Apputvikling Bergen, E-handelsløsninger, Nettside redesign, SEO-tjenester Bergen, Hosting-løsninger, UX/UI design, Tilpassede programvareløsninger, Skybaserte løsninger, Databaseadministrasjon, API-integrasjon, Teknologisk innovasjon, Bedriftsløsninger, Digitale verktøy, IT-sikkerhet, Datamigrering, Skalerbare løsninger, IT-prosjektledelse, Nettbutikk utvikling, Mobilapp utvikling, Kontinuerlig integrasjon og levering"
+};
 
 export default function Home() {
-  return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+  return (
+    <ColorProvider>
+    <ColorApplier />
+    <div className={`App`}>
+      <main className={`Primary`}>
+        <HomeWelcome />
+        <CubeContainer />
+        <Customers />
+        <Services />
+        <Solutions />
+        <div className="Gradient">
+          <Skills />
+          <Divider />
+          <ContactDallas />
         </div>
+        <Footer />
       </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
     </div>
+    <CustomCursor />
+    </ColorProvider>
   );
 }

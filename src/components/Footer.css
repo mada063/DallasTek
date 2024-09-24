@@ -1,0 +1,82 @@
+.footer-option{
+    transition: background-color var(--hover-duration) ease, color var(--hover-duration) ease;
+  }
+
+.footer-option:hover{
+    color: var(--border-color);
+    transition: color var(--hover-duration) ease;
+}
+
+.footer-container a:link,
+.footer-container a:visited,
+.footer-container a:active {
+    text-decoration: none;
+    
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0;
+    padding: 100px;
+    background-color: var(--primary-color);
+  }
+  
+.footer-main-title{
+    font-family: 'Libre Caslon Display', serif;
+    font-size: 4rem;
+}
+
+.footer-sub-title{
+    font-size: 2rem;
+}
+
+.footer-color{
+    color: var(--border-color);
+}
+
+  .footer-title {
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 5vh;
+  }
+
+  .footer-container a {
+    color: var(--face-color);
+  }
+
+  .footer-section a{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    font-size: 1rem;
+  }
+
+  .footer-section p {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .footer-bottom {
+    font-weight: 200;
+    font-size: 15px;
+    text-align: center;
+    padding-bottom: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: var(--primary-color);
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-container a:link,
+.footer-container a:visited,
+.footer-container a:active {
+    text-decoration: none; 
+}

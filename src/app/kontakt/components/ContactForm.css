@@ -1,0 +1,213 @@
+.contact-container {
+    background-color: var(--primary-color);
+    padding-left: 5vw;
+    padding-top: 10vh;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.contact-form-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10vh;
+}
+
+.contact-form-title h3{
+    font-weight: 200;
+}
+
+.contact-form-logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+label {
+    cursor: none;
+}
+
+input {
+    cursor: none;
+}
+
+button {
+    cursor: none;
+}
+
+.contact-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.contact-form {
+    max-width: 60vw;
+    width: 100%;
+    background-color: var(--face-color);
+    padding: 2vw;
+    border-radius: 5px;
+    color: var(--text-color);
+    margin: 2vw;
+    box-sizing: border-box;
+}
+
+.input-box {
+    margin-top: 2vh;
+}
+
+.input-box .field {
+    width: 100%;
+    height: 5vh;
+    background-color: transparent;
+    border: 2px solid var(--text-color);
+    color: var(--text-color);
+    outline: none;
+    border-radius: 5px;
+    padding: 1vh;
+    margin-top: 1vh;
+    box-sizing: border-box;
+}
+
+.field.mess {
+    font-family: 'Inter';
+    height: 20vh;
+    resize: none;
+    cursor: none;
+}
+
+.form-button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    transition: background-color var(--hover-duration) ease, color var(--hover-duration) ease;
+    margin-top: 3vh;
+    box-sizing: border-box;
+}
+
+.form-button:hover {
+    background-color: var(--border-color);
+    color: var(--secondary-color);
+}
+
+.budget-box {
+    margin-top: 2vh;
+}
+
+.budget-buttons {
+    display: flex;
+    gap: 2vw;
+    margin-top: 1vh;
+}
+
+.budget-button {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    cursor: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.budget-button.active {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: 2px solid var(--border-color);
+}
+
+.budget-button:hover {
+    background-color: var(--primary-color);
+    color: var(--border-color);
+}
+
+.subject-buttons-container {
+    margin-bottom: 20px;
+}
+
+.subject-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.subject-button {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    cursor: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.subject-button.active {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: 2px solid var(--border-color);
+}
+
+.subject-button:hover{
+    background-color: var(--primary-color);
+    color: var(--border-color);
+}
+
+.swal-confirm-button {
+    background-color: var(--secondary-color) !important;
+    color: var(--text-color) !important; /* Ensures the text is readable */
+    border: none; /* Optional: Removes border */
+    box-shadow: none; /* Optional: Removes shadow */
+    padding: 10px 20px; /* Optional: Adjust padding */
+    border-radius: 5px; 
+    cursor: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.swal-confirm-button:hover {
+    background-color: var(--border-color) !important; /* Optional: If you want a hover effect */
+    color: var(--primary-color);
+}
+
+.swal2-confirm {
+    cursor: none !important; /* Target the SweetAlert2 confirm button directly */
+}
+
+.swal2-styled.swal2-confirm {
+    cursor: none !important; /* Additional specificity to ensure the cursor is overridden */
+    background-color: var(--secondary-color);
+}
+
+.contact-form-logo {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.contact-form-logo.fade-in-left {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Fade-in animation for the form (from the right) */
+.contact-form-container {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.contact-form-container.fade-in-right {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+

@@ -1,0 +1,90 @@
+/* src/components/Customers.css */
+.customers {
+    background-color: var(--primary-color);
+    min-height: 50vh;
+    padding-top: 50vh;
+  }
+  
+  .customers-title {
+    font-weight: 200;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10vh;
+  }
+  
+  .customer-slide {
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+  }
+  
+  .customer {
+    text-align: center;
+  }
+  
+  .customer a {
+    color: var(--white-color);;
+    text-decoration: none;
+    font-size: clamp(0.5rem, 3vw, 1rem);
+  }
+
+.customer-slide h1{
+    margin: 10px;
+    font-weight: 200;
+    font-size: 2rem;
+}
+
+.brorvikskuto a:link,
+.brorvikskuto a:visited,
+.brorvikskuto a:active {
+    text-decoration: none;
+    color: var(--white-color);;
+}
+
+.brorvikskuto-logo {
+    display: flex;            /* Use flexbox for layout */
+    flex-direction: row;      /* Arrange children horizontally */
+    align-items: center;      /* Center children vertically */
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.brorvikskuto-logo img{
+  max-width: 5vw;
+}
+
+.brorvikskuto a {
+    text-align: center;       /* Center text inside the anchor tag */
+    margin: 0;                /* Remove default margin */
+}
+
+.norengros-logo {
+    font-family: "Rubik";
+    font-weight: 100;
+    text-decoration: none;
+    display: flex;            /* Use flexbox for layout */
+    flex-direction: row;      /* Arrange children horizontally */
+    align-items: center;      /* Center children vertically */
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.norengros a:link,
+.norengros a:visited,
+.norengros a:active {
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.onlan-logo {
+  display: flex;            /* Use flexbox for layout */
+  flex-direction: row;      /* Arrange children horizontally */
+  align-items: center;      /* Center children vertically */
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+.onlan-logo img {
+  max-width: 5vw;
+}
+  

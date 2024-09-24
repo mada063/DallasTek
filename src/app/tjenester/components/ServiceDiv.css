@@ -1,0 +1,86 @@
+.service-div-wrapper {
+    padding-right: 10vw;
+    padding-left: 10vw;
+    margin-top: 40vh;
+}
+
+.service-div-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start; /* Ensure the title and boxes align to the top */
+    gap: 10vw;
+}
+
+.service-div-text-container {
+    flex: 1; /* Allow this section to take up as much space as needed */
+}
+
+.bold{
+    font-weight: 500;
+}
+
+.service-div-boxes {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping of boxes if they don't fit in one row */
+    flex-direction: row; /* Ensures the boxes are aligned in a row */
+    justify-content: flex-start; /* Align boxes to the start of the container */
+    gap: 2vw; /* Adds spacing between the boxes */
+    margin-top: 20px; /* Optional: Add some spacing from the content above */
+}
+
+.service-div-box {
+    width: 20vw; /* Set the desired width */
+    height: 65vh; /* Set the desired height */
+    box-sizing: border-box; /* Ensures padding and border are included in the width/height */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align text to the left */
+    justify-content: flex-start; /* Align the content to start from the top */
+    padding: 1.5vw;
+    background-color: var(--primary-color); /* Ensure the top 2/3 is white */
+    color: var(--text-color);
+    border-radius: 5px; /* Optional: Add rounded corners */
+    overflow: hidden; /* Prevent content from overflowing the box */
+    margin: 1vw; /* Optional: Add margin between boxes */
+    border: 1px solid var(--black-color); /* Adds a black border around the box */
+    position: relative; /* For positioning the image */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-div-box:hover {
+    transform: translateY(-10px); /* Lift the box slightly */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Increase shadow for more depth */
+}
+
+.service-div-img {
+    position: absolute;
+    bottom: 10px; 
+    left: 10px; 
+    right: 10px; 
+    width: calc(100% - 20px); 
+    height: 20%; /* Smaller height for a narrow image strip */
+    background-size: cover;
+    background-position: center 70%; /* Adjust to show more/less of the image */
+    z-index: 1;
+    border-radius: 5px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    transition: transform 0.1s ease-out; /* Smooth movement for parallax effect */
+    will-change: transform; /* Optimize for the transform */
+}
+
+.service-div-box h3 {
+    margin-left: 0.5vw;
+    z-index: 2;
+    position: relative;
+    margin-bottom: 0.5em; /* Space between title and paragraph */
+}
+
+.service-div-box p {
+    margin-left: 0.5vw;
+    font-size: 1em; /* Slightly smaller font for the paragraph */
+    z-index: 2;
+    position: relative;
+    margin-bottom: 5vh; /* Space between the paragraph and the bottom of the box */
+}

@@ -1,0 +1,17 @@
+:root {
+  --primary-color: #282c2f;
+  --secondary-color: #2b393a;
+  --border-color: #F4B860;
+  --text-color: #D9D9D9;
+  --black-color: #000000;
+  --white-color: #fff;
+  --face-color: rgba(127, 136, 136, 0.3); /* Initial transparent color */
+
+  --color-change-duration: 0.5s; /* Default color change duration */
+  --hover-duration: 0.2s; /* Default hover effect duration */
+}
+
+/* Add styles for elements that should change color here */
+.title-cube-container, .landing-container, .customers, .header, .footer, .cube .face, .isometric-cube .face, .footer-container, .footer-bottom, .close-btn, .service-page-text, .text-box-link, .header-middle a, .header-right a, .footer-option, .homewelcome-landing, .landing-container, .title{
+  transition: background-image var(--color-change-duration), background-color var(--color-change-duration) ease, color var(--color-change-duration) ease, border-color var(--color-change-duration) ease, top 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}

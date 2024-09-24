@@ -1,0 +1,289 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; /* Ensure space between logo and menu */
+  width: 100%;
+  position: fixed;
+  background: var(--primary-color);
+  padding: 10px 0;
+  color: var(--text-color);
+  z-index: 1000;
+  top: 0;
+  box-shadow: none;
+  transition: top 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.title-cube-container, .landing-container, .customers, .header, .footer, .cube .face, .isometric-cube .face, .footer-container, .footer-bottom, .close-btn, .service-page-text, .text-box-link, .header-middle a, .header-right a, .footer-option, .homewelcome-landing, .landing-container, .title{
+  transition: background-image var(--color-change-duration), background-color var(--color-change-duration) ease, color var(--color-change-duration) ease, border-color var(--color-change-duration) ease, top 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}s
+
+.header.scrolled {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header.hide-header {
+  top: -80px;
+}
+
+.header.show-header {
+  top: 0;
+}
+
+.header a:link, a:visited, a:active {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.header a.active-link {
+  color: var(--border-color); /* Active text color */
+}
+
+.header-middle a:hover, .header-right a:hover {
+  color: var(--primary-color);
+  background-color: var(--border-color);
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.header-left, .header-right {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.header-left {
+  margin-left: 2vw;
+  font-size: clamp(1rem, 2.5vw, 2rem);
+  font-weight: 200;
+  padding: 1vh 0;
+  z-index: 1100;
+}
+
+.header-middle {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1; /* Take up all remaining space */
+}
+
+.header-middle a{
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0px 10px;
+  transition: background-color 0.3s, color 0.3s;
+  color: var(--text-color);
+  border-radius: 5px;
+}
+
+.header-right a {
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0px 10px;
+  transition: background-color 0.3s, color 0.3s;
+  color: var(--text-color);
+  border-radius: 5px;
+  background-color: var(--secondary-color);
+  font-size: clamp(1rem, 2vw, 1.1rem);
+}
+
+.header-right {
+  margin-right: 2vw; /* Adds space on the right */
+  flex-shrink: 0;
+}
+
+.header-logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.title-container-header {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.title-line {
+  display: inline-block;
+  width: 2px;
+  height: 0;
+  background-color: var(--secondary-color);
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: height 0.5s ease-in-out, top 0.3s ease-in-out;
+  z-index: 2;
+}
+
+.title-fade {
+  display: inline-block;
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+  transition: transform 0.5s ease-in-out;
+  font-size: clamp(1rem, 2.5vw, 2rem);
+}
+
+.title-main {
+  display: inline-block;
+  left: 0;
+  transition: transform 0.5s ease-in-out;
+  z-index: 1;
+  font-size: clamp(1rem, 4vw, 3rem);
+  font-family: 'Libra Casion Display';
+}
+
+.title-container-header.shrink .title-line {
+  animation: bounceIn 0.5s ease-in-out forwards, bounceOut 0.5s ease-in-out 2s forwards;
+}
+
+.title-container-header.shrink .title-fade {
+  transform: translateX(-10rem);
+  transition-delay: 0.8s;
+}
+
+.title-container-header.shrink .title-main {
+  transform: translateX(-10rem);
+  transition-delay: 1.5s;
+}
+
+.header .mobile-menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+/* Mobile Menu */
+.active-link {
+  color: var(--border-color); /* The highlight color when the link is active */
+}
+/* Mobile Menu Covering the Entire Screen */
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Cover full width */
+  height: 100%; /* Cover full height */
+  background-color: var(--secondary-color);
+  padding-top: 80px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  transform: translateX(100%); /* Start off-screen */
+  transition: transform 0.3s ease-in-out; /* Smooth slide-in effect */
+}
+
+/* When the menu is open, slide it into view */
+.mobile-nav.open {
+  transform: translateX(0);
+}
+
+/* Mobile Navigation Links */
+.mobile-nav-link {
+  padding: 15px 20px;
+  text-decoration: none;
+  font-size: 2rem; /* Larger font size for better visibility */
+  color: var(--text-color);
+  text-align: center;
+  width: 100%;
+  margin: 20px 0; /* Space out the links */
+}
+
+.mobile-nav-link-contact {
+  margin-top: 10vh;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 2rem; /* Larger font size for better visibility */
+  color: var(--text-color);
+  background-color: var(--primary-color);
+  text-align: center;
+  border-radius: 5px;
+}
+
+.mobile-nav-link:hover {
+  background-color: var(--border-color);
+  color: var(--primary-color);
+}
+
+/* Hamburger Icon */
+.menu-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-color);
+  z-index: 1100;
+  position: relative;
+}
+
+/* Smooth fade-out of the menu when closing */
+.mobile-nav.closed {
+  transform: translateX(120%);
+}
+
+.transition-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--secondary-color); /* Customize color */
+  z-index: 9999; /* Ensure it sits above everything */
+  transform: translateX(100%); /* Initially hidden to the left */
+  transition: transform 1s ease; /* Smooth slide transition */
+}
+
+.transition-overlay.slide-in {
+  transform: translateX(0); /* Slide in to cover the screen */
+}
+
+.transition-overlay.slide-out {
+  transform: translateX(100%); /* Slide out to the right */
+}
+
+
+@media (max-width: 768px) {
+  .header-middle {
+    display: none; /* Hide middle section on mobile */
+  }
+
+  .header-left {
+    flex: 1; /* Logo takes up the left side */
+  }
+
+  .header-right {
+    margin-left: 0; /* Remove left margin */
+    margin-right: 20px; /* Adjust right margin */
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    height: 0;
+    top: 0;
+  }
+  50% {
+    height: 4rem;
+    top: -1rem;
+  }
+  100% {
+    height: 4rem;
+    top: 0;
+  }
+}
+
+@keyframes bounceOut {
+  0% {
+    height: 4rem;
+    top: 0;
+  }
+  50% {
+    height: 4rem;
+    top: -1rem;
+  }
+  100% {
+    height: 0;
+    top: 0;
+  }
+}

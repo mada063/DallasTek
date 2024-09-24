@@ -1,0 +1,47 @@
+.service-development-wrapper {
+    padding-right: 10vw;
+    padding-left: 10vw;
+}
+
+.service-development-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10vw;
+    min-height: 150vh; /* Ensures the container has enough height for the effect */
+    position: relative; /* Ensure the container is positioned correctly */
+}
+
+.service-development-text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.service-development-elements {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start; /* Align items to start from the top */
+    justify-content: flex-start; /* Ensure items start from the left */
+    gap: 2vw; /* Adds spacing between the elements */
+}
+
+.service-development-element {
+    flex-basis: calc(33.333% - 2vw); /* Each element takes up 1/3rd of the container width, accounting for the gap */
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding: 10px;
+}
+
+.service-development-element h3{
+    margin-left: 0.5vw;
+}
+
+.service-development-element div {
+    width: 20vw; /* Set the desired width of the line */
+    height: 2px; /* Set the height of the line */
+    background-color: var(--black-color); /* Set the line color */
+    margin-bottom: 1vh; /* Space between the line and the heading */
+}

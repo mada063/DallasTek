@@ -1,0 +1,76 @@
+/* src/components/Welcome.css */
+
+.landing-container {
+    padding: 0 15vw;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh; /* Full viewport height */
+  }
+  
+  .title {
+    font-weight: 200;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+  }
+  
+  .main-title {
+    margin-top: 1vh;
+    margin-bottom: 3vh;
+    margin-left: -0.4vw;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+  
+  .title-cube-container {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between the title and the cube */
+    width: 100%;
+    height: 50vh; /* Set height to 50% of the viewport height */
+  }
+  
+  .anim-title {
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+  }
+  
+  .line {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .line-inner {
+    display: inline-block;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+  }
+  
+  .anim-title.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .anim-title.visible .line-inner {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  .title p {
+    padding: 0;
+    margin-bottom: 2vh;
+  }
+  
+  .sub-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }

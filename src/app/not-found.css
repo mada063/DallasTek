@@ -1,0 +1,47 @@
+.notfound-wrapper{
+    min-height: 100vh;
+    padding-top: 10vh;
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+
+.notfound-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 5vh;
+}
+
+.notfound-container h1{
+    margin-bottom: 0;
+}
+
+.notfound-container h2{
+    margin-bottom: 0;
+}
+
+.notfound-tidbit{
+    font-size: medium;
+    margin-bottom: 5vh;
+}
+
+.notfound-list{
+    margin-bottom: 2vh;
+    margin-left: 2vw;
+}
+
+.notfound-button{
+        margin-top: 10vh;
+        text-decoration: none;
+        padding: 10px 20px;
+        transition: background-color 0.3s, color 0.3s;
+        color: var(--text-color);
+        border-radius: 5px;
+        background-color: var(--secondary-color);
+        font-size: clamp(1rem, 2vw, 1.1rem);
+}
+
+.notfound-button:hover {
+    color: var(--primary-color);
+    background-color: var(--border-color);
+}

@@ -1,0 +1,30 @@
+.about-founder-wrapper {
+    display: flex;
+    padding: 0 15vw;
+    min-height: 130vh;
+    color: var(--black-color);
+}
+
+.founder-title{
+    text-align: left;
+    margin-top: 30vh;
+    margin-bottom: 10vh;
+}
+
+.founder-container{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left; /* Left-align text inside the container */
+}
+
+.location-title{
+    text-align: left;
+    margin-bottom: 10vh;
+}
+
+.founder-image{
+    max-width: 50%;
+}
+

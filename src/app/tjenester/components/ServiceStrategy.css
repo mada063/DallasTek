@@ -1,0 +1,69 @@
+.service-wrapper {
+    padding-right: 10vw;
+    padding-left: 10vw;
+}
+
+.service-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10vw;
+    min-height: 150vh;
+    position: relative; /* Ensure the container is positioned correctly */
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+}
+
+.service-strategy-text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.service-parallax-img-container {
+    margin-top: 20vh;
+    transition: transform 0.1s ease-out; /* Smooth movement for the container */
+    will-change: transform; /* Optimize for the transform */
+    overflow: hidden; /* Ensure the image stays within the container */
+    width: 25vw; /* Ensure the container takes full width of its parent */
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+
+}
+
+.service-parallax-img {
+    transition: transform 0.1s ease-out; /* Smooth movement for parallax effect */
+    will-change: transform; /* Optimize for the transform */
+    width: 100%; /* Ensure the image scales down correctly */
+    height: auto;
+    display: block; /* Ensure the image behaves as a block element */
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.service-page-elements {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw; /* Space between elements */
+  }
+  
+  .service-page-element {
+    flex-basis: calc(50% - 2vw); /* Adjust to 2 elements in a row */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+  }
+  
+
+.service-page-element h3 {
+    margin-left: 0.5vw;
+}
+
+.service-page-element div {
+    width: 20vw;
+    height: 2px;
+    background-color: var(--black-color);
+    margin-bottom: 1vh;
+}

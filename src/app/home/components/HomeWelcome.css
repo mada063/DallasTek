@@ -1,0 +1,124 @@
+.homewelcome-landing{
+    padding: 0 15vw;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding-bottom: 20vh;
+}
+
+.home-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+}
+
+.about-titles-middle{
+    display: flex;
+    flex-direction: column;
+    /* HER SKJER DET TING
+    text-align: left; /* Left-align text inside the container */
+    transform: translateX(25%); /* Move the container right to start from the center */
+}
+
+.about-title-middle{
+    text-align: left;
+    width: 100%;
+    margin-top: -3vh;
+}
+
+.about-img img{
+    max-width: 33vw;
+}
+
+.about-title{
+    margin-top: 20vh;
+    margin-bottom: 0;
+}
+
+.about-paragraph{
+    text-align: left;
+    width: 100%;
+}
+
+.tek-container {
+    position: relative;
+    width: 10vw;
+    height: auto;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+  }
+  
+  .tek-container-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    margin-bottom: 4vh;
+    transform: translateX(25%);
+  }
+
+  .tek-test{
+    text-align: center;
+  }
+  
+  .tek-container-section {
+    display: flex;
+  }
+  
+  .tek-text {
+    margin-left: 0.1vw;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.5s, transform 0.5s;
+    text-align: center;
+  }
+  
+  .tek-text.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .tek-text.exit {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  
+  .bracket {
+    color: var(--border-color);
+  }
+  
+  .for-din-bedrift {
+    margin-left: 1vw;
+  }
+
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  /* Fade-in keyframes */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Apply animations separately */
+  .tek-container-wrapper{
+    animation: slideIn 0.1s ease-out forwards, fadeIn 1s ease-in-out forwards;
+    opacity: 0; /* Ensure elements start hidden */
+  }
+  

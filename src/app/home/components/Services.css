@@ -1,0 +1,106 @@
+/* src/components/Services.css */
+.services-slide {
+    position: relative;
+    z-index: 1;
+    min-height: 150vh;
+    background-color: var(--white-color);
+}
+
+.title-services {
+    text-align: center;  
+    margin-top: 30vh;
+    margin-bottom: 10vh;
+    padding-right: 20vw;
+    padding-left: 20vw;
+    color: var(--black-color);
+}
+
+.service-box {
+    margin: 20px;
+    margin-bottom: 10vh;
+    margin-right: 10vw;
+    margin-left: 10vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Four columns for larger screens */
+    gap: 2vw; /* Adjust the gap between the items as needed */
+    transition: left 1s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.text-box {
+    padding: 20px; /* Add padding to ensure content is not squished */
+    box-sizing: border-box; /* Ensure padding is included in the box's total width and height */
+    background-color: var(--primary-color); /* Background color for better visibility */
+    color: var(--text-color); /* Text color */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* Add some shadow for depth */
+    position: relative; /* Ensure positioning for child elements */
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; /* Hide the outline when not hovered */
+}
+
+.svg-image {
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.text-box h2, .text-box p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.text-box h2 {
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.text-box p {
+    white-space: normal;
+    text-overflow: clip;
+    padding-bottom: 40px;
+}
+
+.text-box:hover {
+    transform: translateY(-10px); /* Lift the box slightly */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Increase shadow for more depth */
+}
+
+.text-box:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid var(--primary-color); /* Same color as background, or a contrasting one */
+    border-radius: 5px; /* Same radius as the box */
+    transform: scale(1.05); /* Slightly larger than the box */
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    z-index: -1; /* Place the outline behind the box */
+}
+
+.text-box-link {
+    display: block; /* Ensure it takes full width */
+    text-align: center; /* Center text */
+    color: var(--text-color); /* Initial text color */
+    background-color: transparent; /* Initial background color */
+    text-decoration: none; /* Remove underline from links */
+    padding: 10px; /* Add padding for better click area */
+    border-radius: 5px; /* Rounded corners */
+    position: absolute; /* Position it absolutely within the text-box */
+    bottom: 10px; /* Position it 10px from the bottom */
+    left: 10px; /* Position it 10px from the left */
+    z-index: 1; /* Make sure it appears above any potential background elements */
+}
+
+.text-box-link:hover {
+    color: var(--primary-color);
+    background-color: var(--border-color);
+    transition: background-color var(--hover-duration) ease, color var(--hover-duration) ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+}

@@ -1,0 +1,80 @@
+.service-design-wrapper {
+    padding-right: 10vw;
+    padding-left: 10vw;
+}
+
+.service-page-title {
+    margin-bottom: 3vh;
+}
+
+
+.service-design-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10vw;
+    min-height: 150vh; /* Ensures the container has enough height for the effect */
+    position: relative; /* Ensure the container is positioned correctly */
+}
+
+.service-design-text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.service-parallax-img-container {
+    margin-top: 10vh;
+    transition: transform 0.1s ease-out; /* Smooth movement for the container */
+    will-change: transform; /* Optimize for the transform */
+    overflow: hidden; /* Ensure the image stays within the container */
+    width: 50vw; /* Ensure the container takes full width of its parent */
+}
+
+.service-parallax-img {
+    transition: transform 0.1s ease-out; /* Smooth movement for parallax effect */
+    will-change: transform; /* Optimize for the transform */
+    width: 100%; /* Ensure the image scales down correctly */
+    height: auto;
+    display: block; /* Ensure the image behaves as a block element */
+}
+
+.service-wrapper {
+    padding-right: 10vw;
+    padding-left: 10vw;
+}
+
+.service-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10vw;
+    min-height: 150vh;
+    position: relative;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+}
+
+.service-design-text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.service-parallax-img-container {
+    margin-top: 20vh;
+    transition: transform 0.1s ease-out;
+    will-change: transform;
+    overflow: hidden;
+    width: 25vw;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.service-parallax-img {
+    transition: transform 0.1s ease-out;
+    will-change: transform;
+    width: 100%;
+    height: auto;
+    display: block;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}

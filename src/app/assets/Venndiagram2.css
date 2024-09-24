@@ -1,0 +1,92 @@
+/* Circle 1 (previously path5) */
+#path5 {
+  opacity: 1; /* Start visible */
+  transform: translate(0, 25%); /* Starting position */
+  animation: moveCircle1ToFinal 1.5s 3s forwards; /* Move animation with 2s delay */
+}
+
+/* Circle 2 (previously path1_9_4) */
+#path1_9_4 {
+  opacity: 0; /* Start as invisible */
+  transform: translate(20%, -10%); /* Starting position */
+  animation: fadeInAndMoveCircle2 1.5s 3s forwards; /* Fade in and move animation with 2s delay */
+}
+
+/* Circle 3 (previously path4) */
+#path4 {
+  opacity: 0; /* Start as invisible */
+  transform: translate(-20%, -10%); /* Starting position */
+  animation: fadeInAndMoveCircle3 1.5s 3s forwards; /* Fade in and move animation with 2s delay */
+}
+
+/* Fill and Text Fade In */
+#path21,
+#text1,
+#text2,
+#text3,
+#text4 {
+  opacity: 0; /* Start as invisible */
+  animation: fadeIn 0.5s 5s forwards; /* Fade in animation with 4s delay */
+}
+
+/* Keyframe animations */
+@keyframes fadeInAndMoveCircle2 {
+  0% {
+    opacity: 0; /* Start as invisible */
+    transform: translate(20%, -10%); /* Starting position */
+  }
+  100% {
+    opacity: 1; /* End as visible */
+    transform: translate(0, 0); /* End position */
+  }
+}
+
+@keyframes fadeInAndMoveCircle3 {
+  0% {
+    opacity: 0; /* Start as invisible */
+    transform: translate(-20%, -10%); /* Starting position */
+  }
+  100% {
+    opacity: 1; /* End as visible */
+    transform: translate(0, 0); /* End position */
+  }
+}
+
+@keyframes moveCircle1ToFinal {
+  0% {
+    transform: translate(0, 25%); /* Starting position */
+  }
+  100% {
+    transform: translate(0, 0); /* End position */
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; /* Start as invisible */
+  }
+  100% {
+    opacity: 1; /* End as visible */
+  }
+}
+
+/* Animation class */
+.animate#path5 {
+  animation: moveCircle1ToFinal 1.5s 3s forwards;
+}
+
+.animate#path1_9_4 {
+  animation: fadeInAndMoveCircle2 1.5s 3s forwards;
+}
+
+.animate#path4 {
+  animation: fadeInAndMoveCircle3 1.5s 3s forwards;
+}
+
+.animate#path21,
+.animate#text1,
+.animate#text2,
+.animate#text3,
+.animate#text4 {
+  animation: fadeIn 0.5s 5s forwards;
+}

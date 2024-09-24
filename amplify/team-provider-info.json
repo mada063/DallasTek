@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-dallastek2-dev-4ca80-authRole",
+      "UnauthRoleArn": "arn:aws:iam::654654299314:role/amplify-dallastek2-dev-4ca80-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::654654299314:role/amplify-dallastek2-dev-4ca80-authRole",
+      "Region": "eu-north-1",
+      "DeploymentBucketName": "amplify-dallastek2-dev-4ca80-deployment",
+      "UnauthRoleName": "amplify-dallastek2-dev-4ca80-unauthRole",
+      "StackName": "amplify-dallastek2-dev-4ca80",
+      "StackId": "arn:aws:cloudformation:eu-north-1:654654299314:stack/amplify-dallastek2-dev-4ca80/d9d389a0-7a7b-11ef-bcd5-06a40161f783",
+      "AmplifyAppId": "d35k9mh3dp2pt4"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d35k9mh3dp2pt4",
+          "type": "manual"
+        }
+      }
+    }
+  }
+}

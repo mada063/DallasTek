@@ -1,0 +1,30 @@
+.service-showcase-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30vh;
+}
+
+.service-showcase-diagram{
+    margin-bottom: 20vh;
+}
+
+.service-showcase-title{
+    text-align: center;
+    padding-right: 30vw;
+    padding-left: 30vw;
+}
+
+.service-img {
+    margin-top: 10vh;
+    width: 20vw;
+    border-radius: 5px;
+    transition: transform 0.1s ease-out; /* Smooth movement for parallax effect */
+    will-change: transform; /* Optimize for the transform */
+}
+
+.service-wrapper {
+    padding-right: 10vw;
+    padding-left: 10vw;
+}

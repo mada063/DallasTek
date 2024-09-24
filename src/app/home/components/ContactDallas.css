@@ -1,0 +1,53 @@
+.contact-dallas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    min-height: 70vh;
+    padding-bottom: 30vh;
+    
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .contact-dallas h2 {
+    font-size: 10vw;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin: 0;
+    opacity: 0.4; /* Adjust the value for desired transparency */
+  }
+  
+  
+  .contact-dallas p {
+    
+    display: inline-block;
+    vertical-align: middle;
+    color: var(--black-color);
+  }
+  
+  .contact {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    transition: background-color var(--hover-duration) ease, color var(--hover-duration) ease;
+    width: fit-content;
+    margin-top: 10px;
+  }
+
+  .contact:hover{
+    background-color: var(--border-color);
+    color: var(--primary-color);
+  }
+  

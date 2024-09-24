@@ -1,0 +1,71 @@
+.cursor {
+  width: 20px;
+  height: 20px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  position: absolute;
+  z-index: 9998;
+  transition: transform 0.2s ease, background-color 1s ease, border-color 1s ease, color 1s ease;
+  pointer-events: none;
+}
+
+.cursor.expand {
+  transform: scale(2) translate(-50%, -50%);
+}
+
+.cursor.expand2 {
+  transform: scale(4) translate(-50%, -50%);
+}
+
+.cursor.click {
+  transform: scale(1.5) translate(-50%, -50%);
+}
+
+.cursor-outer {
+  width: 75px;
+  height: 75px;
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  position: absolute;
+  z-index: 9997;
+  transition: transform 0.2s ease, background-color 1s ease, border-color 1s ease, color 1s ease;
+  overflow-x: hidden;
+  pointer-events: none;
+}
+
+.cursor.hover-effect {
+  color: black;
+  mix-blend-mode: exclusion;
+}
+
+.circular-text-container {
+  position: absolute;
+  top: -325%;
+  left: -325%; /* Adjust this value to move the circular text to the left */
+  width: 150px; /* Adjust this value to make the circular text smaller */
+  height: 150px; /* Adjust this value to make the circular text smaller */
+  animation: effect 8s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes effect {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.circular-text-container span {
+  position: absolute;
+  left: 50%;
+  transform-origin: 0px 75px; /* Adjust this value based on the new size */
+  font-weight: 400;
+  pointer-events: none;
+  color: var(--text-color);
+}
+
+.cursor.hover-container {
+  background-color: var(--secondary-color); /* Change cursor color when hovering over .container */
+}

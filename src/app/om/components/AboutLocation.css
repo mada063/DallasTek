@@ -1,0 +1,31 @@
+.about-location{
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 130vh;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    color: var(--white-color);
+}
+
+.location-container{
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    text-align: left; /* Left-align text inside the container */
+    width: 75%; /* Make the container half the width of the parent */
+    transform: translateX(25%); /* Move the container right to start from the center */
+}
+
+.location-title{
+    text-align: left;
+    margin-bottom: 10vh;
+}
+
+.location-img{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    
+}
+
