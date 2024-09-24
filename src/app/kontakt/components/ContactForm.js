@@ -77,7 +77,7 @@ const ContactForm = () => {
             <div className='contact-container'>
                 <div className='contact-form-title'>
                 
-                    <h2 className="anim-title animate-on-load">
+                    <h2 className="anim-title animate-on-load contact-title">
                         <span className="line"><span className="line-inner">Klar for å bygge noe magisk?</span></span>
                     </h2>
                     <p className="anim-paragraph animate-on-load">

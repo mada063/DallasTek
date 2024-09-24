@@ -95,7 +95,7 @@ const CustomCursor = () => {
   }, []);
 
   useEffect(() => {
-    const blendElements = document.querySelectorAll('.header-left a, .title-services, .title-skills, .sub-title-skills, .about-title, .about-title-middle');
+    const blendElements = document.querySelectorAll('.header-left a, .title-services, .title-skills, .sub-title-skills, .about-title, .about-title-middle, .contact-title, .services-title, .projects-title');
     const addHoverEffect = () => {
       if (cursorRef.current) {
         cursorRef.current.classList.add('hover-effect');

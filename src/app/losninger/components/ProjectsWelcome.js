@@ -36,7 +36,7 @@ const ProjectsWelcome = () => {
     <div className='project-container-wrapper'>
         <div className="project-container">
           <div className='project-text'>
-            <h2 className="anim-title animate-on-load">
+            <h2 className="anim-title animate-on-load projects-title">
               <span className="line"><span className="line-inner">Lidenskap i hver <mark>detalj</mark></span></span>
             </h2>
             <p className="anim-paragraph animate-on-load">

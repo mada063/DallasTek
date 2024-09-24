@@ -42,7 +42,7 @@ const ServiceWelcome = () => {
             <div className='service-welcome-container'>
                 <div className="service-title-container">
                     <div className="service-title">
-                        <h2 className="anim-title animate-on-load">
+                        <h2 className="anim-title animate-on-load services-title">
                             <span className="line"><span className="line-inner">Utforsk Nye <span className='border-color'>Horistonter</span></span></span>
                         </h2>
                         <p className="anim-paragraph animate-on-load">
