@@ -14,6 +14,8 @@ const jsonLd = {
     "@context": "http://schema.org",
     "@type": "LocalBusiness",
     name: "Dallas Tek",
+    url: "https://www.dallastek.no/",
+    logo: "https://www.dallastek.no/favicon.ico",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Bergen",
