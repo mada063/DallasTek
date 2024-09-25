@@ -1,5 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import "./mobile.css";
 import StartOverlay from "@/components/StartOverlay";
 import Header from '@/components/Header';
 import { LocalBusiness, WithContext } from 'schema-dts';
