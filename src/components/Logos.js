@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 
 export const BrorvikskutoLogo = () => (
-  <Image src="/images/brorvikskuto-logo.png" alt='Brorvikskuto logo' width={150} height={100}/>
+  <Image src="/images/brorvikskuto-logo.png" alt='Brorvikskuto logo' layout="responsive" objectFit="cover" objectPosition="center" width={150} height={100}/>
 );
 
 export const NorengrosLogo = () => (
@@ -13,6 +13,6 @@ export const NorengrosLogo = () => (
 );
 
 export const OnlanLogo = () => (
-  <Image src= "/images/OnLan-logo.png" alt='onlan logo' width={150} height={150}/>
+  <Image src= "/images/OnLan-logo.png" alt='onlan logo' layout="responsive" objectFit="cover" objectPosition="center" width={150} height={150}/>
 );
 

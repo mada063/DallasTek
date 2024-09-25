@@ -10,7 +10,7 @@ import Skills from "./home/components/Skills";
 import Divider from "./home/components/Divider";
 import ContactDallas from "./home/components/ContactDallas";
 import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+import Header from '@/components/Header';
 
 export const metadata = {
   title: 'Dallas Tek - Hjem',

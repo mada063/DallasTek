@@ -17,6 +17,7 @@ const About = () => {
         <CustomCursor />
         <main>
           <div className={`Primary`}>
+            
             <AboutWelcome/>
           </div>
             <AboutLocation />

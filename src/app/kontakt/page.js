@@ -17,6 +17,7 @@ const Contact = () => {
         <CustomCursor />
         <main>
           <div className='Primary'>
+            
           <ContactForm />
           <Footer />
           </div>

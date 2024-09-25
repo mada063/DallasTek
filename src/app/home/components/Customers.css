@@ -87,4 +87,413 @@
 .onlan-logo img {
   max-width: 5vw;
 }
+
+ 
+@media (max-width: 1024px) {
+  .skills {
+      justify-content: space-around; /* Adjusts spacing for better distribution on smaller screens */
+  }
+
+  .skill-box {
+      width: 180px; /* Slightly reduces the width of each box on smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .text-box {
+      flex: 1 1 100%;
+  }
+  .skill-box {
+      width: 160px; /* Further reduces the width for mobile devices */
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .title-cube-container {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50vh;
+      margin-bottom: 50vh;
+  }
+
+  .cube-container {
+      margin-top: 20px; /* Adjust spacing as needed */
+  }
+}
+
+/* Adjust width for different screen sizes */
+@media (max-width: 1200px) {
+  .h-mob {
+      display: none; /* Hide this section on mobile */
+  }
+
+  .customers a{
+      color: var(--primary-color);
+  }
+  .norengros-logo svg{
+      max-width: 10vw;
+  }
+  .brorvikskuto-logo img{
+      max-width: 10vw;
+  }
+  .onlan-logo img{
+      max-width: 10vw;
+  }
+  .anim-title-left{
+      text-align: center;
+  }
+  .anim-paragraph{
+      text-align: center;
+  }
+  .project-description{
+      text-align: center;
+  }
+  .footer-bottom{
+      padding: 10vw;
+      font-size: 0.5rem;
+  }
+  .footer-container{
+      padding: 10vw;
+  }
+  .title-skills{
+      padding-top: 5vh;
+      padding-left: 5vw;
+      padding-right: 5vw;
+      height: auto;
+      margin: auto;
+      text-align: center;
+  }
+
+  .title-services{
+      padding-top: 10vh;
+      padding-left: 5vw;
+      padding-right: 5vw;
+      padding-bottom: 10vh;
+      height: auto;
+      margin: auto;
+      text-align: center;
+  }
+  .service-showcase-diagram svg{
+      width: 90vw;
+  }
+
+  .service-container {
+      flex-direction: column-reverse; /* Stack the image below the text */
+      justify-content: flex-start;
+    }
+
+    .service-page-elements{
+      flex-direction: row;
+    }
+
+    .service-div-container{
+      flex-direction: column;
+    }
+
+    .service-div-box{
+      width: auto;
+    }
+
+    .contact-container{
+      display: block;
+      padding-top: 20vh;
+      padding-left: 0;
+      padding-bottom: 20vh;
+    }
+    .contact-form-logo{
+      align-items: center;
+      justify-content: center;
+    }
+
+    .contact-form{
+      max-width: 80vw;
+      padding: 5vw;
+    }
+
+    .budget-buttons{
+      flex-wrap: wrap;
+    }
+
+    .subject-button:hover{
+      color: var(--text-color);
+    }
+  
+    .location-img{
+      width: auto;
+    }
+  
+    .service-parallax-img-container {
+      width: 100%;
+      position: absolute; /* Position the image absolutely behind the text */
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 60vh; /* Adjust the height as needed */
+      z-index: 0; /* Ensure the image is behind the text */
+      opacity: 0.2; /* Optional: Lower opacity for background effect */
+    }
+  
+    .service-design-text-container {
+      position: relative;
+      z-index: 5; /* Ensure the text is above the image */
+      padding-top: 40vh; /* Add space at the top to avoid overlap */
+    }
+  
+    .service-parallax-img {
+      border-radius: 0;
+    }
+
+  .skills {
+      gap: 1vw; /* Reduce gap between skill boxes */
+      display: flex;
+      flex-direction: row;
+  }
+  .service-box {
+      grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
+  }
+  .tek-container {
+      width: 230px; /* Adjusted width for smaller screens */
+  }
+  .tek-container-wrapper {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  .for-din-bedrift {
+      margin-top: 15px; /* Add some space between the tek-container and for-din-bedrift */
+      margin-left: 0;
+  }
+  .project {
+      flex-direction: column; /* Stack items vertically */
+      margin-top: 20vh;
+  }
+
+  .project-description {
+      padding-right: 0; /* Remove right padding */
+      margin-left: 0; /* Remove left margin */
+      text-align: center; /* Center text */
+      order: 2;
+  }
+
+  .project-image {
+      margin-right: 0; /* Remove right margin */
+      max-width: 100%; /* Ensure image takes full width */
+      order: 1;
+      border-radius: 5px;
+  }
+  .title{
+      margin-right: 10vw;
+  }
+  .project-description{
+      margin-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .carousel{
+      min-height: 100vh;
+      padding-bottom: 20vh;
+  }
+  
+  .service-page-container {
+      flex-direction: column; /* Stack items vertically */
+      padding: 20px; /* Add padding for better spacing on smaller screens */
+      align-items: center; /* Center items horizontally */
+  }
+
+  .service-page-left{
+      margin-top: 20vh;
+      width: 100%; /* Full width on mobile */
+      align-items: center; /* Center items horizontally */
+  }
+
+  .service-page-text {
+      margin-left: 0; /* Reset margin for mobile */
+      padding: 3vh; /* Adjust padding for mobile */
+      text-align: left; /* Center text for mobile */
+  }
+
+  .service-images {
+      width: 100%; /* Full width on mobile */
+      margin-top: 20px; /* Add spacing above the images */
+  }
+
+  .service-elements-img{
+      width: 50%;
+  }
+
+  .service-title-container{
+      width: 50%;
+  }
+
+  .parallax-img-2{
+      width: 50vw;
+  }
+
+  .service-images img {
+      width: 100%; /* Full width for images on mobile */
+  }
+
+  .header-middle {
+      display: none; /* Hide middle section on mobile */
+    }
+  
+    .header-left {
+      flex: 1; /* Logo takes up the left side */
+    }
+  
+    .header-right {
+      margin-left: 0; /* Remove left margin */
+      margin-right: 20px; /* Adjust right margin */
+    }
+  
+    .title-main {
+      transform: none;
+    }
+  
+    .about-titles-middle{
+      transform: none;
+      margin-top: 0;
+    }
+
+    .about-title-middle{
+      margin-top: 0;
+    }
+  .about-content {
+      flex-direction: column; /* Stack items vertically */
+      margin-top: 50vw;
+  }
+
+  .about-text {
+      text-align: center; /* Center text on mobile */
+      margin-bottom: 2vh; /* Add margin to separate text and image */
+  }
+
+  .about-img {
+      margin-left: 0; /* Remove left margin */
+  }
+
+  .about-img img {
+      width: 50vw; /* Make image take more width on mobile */
+      margin-bottom: 20px; /* Add some margin below the image */
+  }
+
+  .contact-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Center align items */
+  }
+
+  .contact-dallas p,
+  .contact {
+      text-align: center; /* Center text */
+      margin: 10px 0; /* Add margin for spacing */
+  }
+  .main-title{
+      font-size: clamp(4rem, 7vw, 4rem)
+  }
+  
+  .anim-title{
+      text-align: center;
+      padding: 0;
+  }
+  .title-skills{
+      margin-top: 10vh;
+      padding-left: 5vw;
+      padding-right: 5vw;
+      height: auto;
+      text-align: center;
+  }
+
+  .title-services{
+      padding-top: 10vh;
+      padding-left: 5vw;
+      padding-right: 5vw;
+      padding-bottom: 10vh;
+      height: auto;
+      margin: auto;
+      text-align: center;
+  }
+
+  .skill-box {
+      margin: 5px; /* Further reduce margin for mobile devices */
+      padding-left: 5px;
+      padding-right: 10px;
+  }
+
+  .skill-box img {
+      width: 20px; /* Reduce image size for mobile devices */
+      height: auto;
+      margin-right: 10px;
+  }
+  .project-image{
+      height: 20vh;
+  }
+  .section.services-slide{
+      padding: 0;
+  }
+
+  .service-box {
+      grid-template-columns: 1fr; /* Single column for small screens */
+  }
+  .text-box {
+      margin: 0 auto; /* Center the text box */
+      width: 90%; /* Ensure text boxes have enough width on small screens */
+      padding: 20px; /* Ensure padding is maintained */
+  }
+  .sub-title{
+      margin-top: 0
+  }
+  .contact {
+      padding: 10px 30px;
+      text-align: center;
+      width: 35%;
+  }
+  .cursor, .cursor-outer {
+      display: none;
+  }
+  .tek-container {
+      width: 100px; /* Further adjusted width for mobile devices */
+      
+  }
+  .tek-container-wrapper {
+      flex-direction: column;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5vh;
+  }
+
+  .for-din-bedrift{
+      align-self: center;
+  }
+
+  .content-1 {
+      padding: 0;
+      padding-top: 20vh;
+  }
+  .title {
+      margin-right: 0;
+      align-items: center;
+      align-content: center;
+      text-align: center; /* Ensure text is centered */
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .content-2{
+      padding: 0;
+  }
+  .isometric-cube{
+      top: 25%;
+  }
+
+  .title p {
+      margin-bottom: 10vh;
+  }
+}
+    
+  
+
   

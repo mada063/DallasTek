@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CustomCursor from '@/components/CustomCursor';
 import Divider from '../home/components/Divider';
@@ -24,6 +23,7 @@ const Services = () => {
     <div>
       <main className='BlackText'>
         <div className='Primary'>
+          
           <ServiceWelcome />
           <ServiceShowcase />
           <ServiceDivider />

@@ -6,6 +6,7 @@ import DallasTekLogoL from '../app/assets/dallastek-logo-l';
 import { FaBars } from 'react-icons/fa';
 import { IoMdClose } from 'react-icons/io';
 import { TransitionLink } from './TransitionLink';
+import { usePathname } from 'next/navigation'; // Using usePathname instead of router.events
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -14,8 +15,9 @@ const Header = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false); // Track if the mobile menu is open
 
+  const pathname = usePathname(); // Get the current pathname
+
   useEffect(() => {
-    // Check if window and localStorage are available (i.e., on client-side)
     if (typeof window !== "undefined") {
       const storedIsScrolled = JSON.parse(localStorage.getItem('isScrolled'));
       const storedIsHidden = JSON.parse(localStorage.getItem('isHidden'));
@@ -62,6 +64,11 @@ const Header = () => {
       };
     }
   }, [lastScrollPosition]);
+
+  // Close mobile menu on route change (using pathname)
+  useEffect(() => {
+    setMenuOpen(false); // Close the mobile menu on pathname change
+  }, [pathname]); // Run this effect every time the route changes
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -113,7 +120,7 @@ const Header = () => {
           <TransitionLink href="/om" onClick={toggleMenu}>
             Om -&gt;
           </TransitionLink>
-          <TransitionLink href="/kontakt" onClick={toggleMenu}>
+          <TransitionLink classname="mobile-nav-contact" href="/kontakt" onClick={toggleMenu}>
             Kontakt -&gt;
           </TransitionLink>
         </nav>

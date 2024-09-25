@@ -18,6 +18,7 @@ const Solution = () => {
         <CustomCursor />
         <main>
           <div className='Primary'>
+            
             <ProjectsWelcome />
             <Solutions />
           </div>
