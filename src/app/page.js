@@ -11,7 +11,6 @@ import Divider from "./home/components/Divider";
 import ContactDallas from "./home/components/ContactDallas";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import "./mobile.css";
 
 export const metadata = {
   title: 'Dallas Tek - Hjem',
