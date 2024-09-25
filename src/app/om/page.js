@@ -5,6 +5,7 @@ import AboutWelcome from './components/AboutWelcome';
 import AboutLocation from './components/AboutLocation';
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import "../mobile.css";
 
 export const metadata = {
   title: 'Dallas Tek - Om',

@@ -5,6 +5,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CustomCursor from '@/components/CustomCursor';
 import ContactForm from './components/ContactForm';
+import "../mobile.css";
 
 export const metadata = {
   title: 'Dallas Tek - Kontakt',
