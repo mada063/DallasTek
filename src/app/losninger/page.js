@@ -6,7 +6,6 @@ import CustomCursor from '@/components/CustomCursor';
 import ProjectsWelcome from './components/ProjectsWelcome';
 import Solutions from '../home//components/Solutions'
 import ContactDallas from '../home/components/ContactDallas';
-import "../mobile.css";
 
 export const metadata = {
   title: 'Dallas Tek - Løsninger',

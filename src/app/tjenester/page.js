@@ -12,7 +12,6 @@ import ServiceStrategy from './components/ServiceStrategy';
 import ServiceConsulting from './components/ServiceConsulting';
 import ServiceDiv from './components/ServiceDiv';
 import ContactDallas from '../home/components/ContactDallas';
-import "../mobile.css";
 
 export const metadata = {
   title: 'Dallas Tek - Tjenester',
