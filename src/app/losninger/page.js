@@ -9,7 +9,7 @@ import ContactDallas from '../home/components/ContactDallas';
 
 export const metadata = {
   title: 'Dallas Tek - Løsninger',
-  description: "Hver linje kode, hver designelement, og hver beslutning vi tar er preget av en lidenskap for det vi gjør.",
+  description: "Se våre løsninger hvor hver linje kode, hver designelement, og hver beslutning vi tar er preget av en lidenskap for det vi gjør.",
 };
 
 const Solution = () => {
