@@ -6,7 +6,7 @@ import { LocalBusiness, WithContext } from 'schema-dts';
 
 export const metadata = {
   title: "Dallas Tek - Løsningen for din bedrift",
-  description: "Dallas Tek - Din løsning for bedrift konsultering, utvikling, design, og digital tansformering i Bergen.",
+  description: "Dallas Tek - Vi spesialiserer oss innen utvikling, design, og digitalisering. Vi holder til i Bergen og hjelper deg med både store og små prosjekter",
   keywords: "Dallas Tek, Dallas tech, IT-løsninger, IT-konsultasjon, IT-tjenester, Webutvikling, Programvareutvikling, Apputvikling, Teknologirådgivning, IT-støtte, digitalisering, webutvikling, web-design, bedriftkonsultasjon, utvikling, design, digital transformasjon, IT-løsninger Bergen, Webutvikling Bergen, IT-konsulent Bergen, Programvareutvikling Norge, Digitalisering Bergen, IT-tjenester i nærheten, Webdesign Bergen, IT-rådgivning Norge, IT-støtte Bergen, Apputvikling Bergen, E-handelsløsninger, Nettside redesign, SEO-tjenester Bergen, Hosting-løsninger, UX/UI design, Tilpassede programvareløsninger, Skybaserte løsninger, Databaseadministrasjon, API-integrasjon, Teknologisk innovasjon, Bedriftsløsninger, Digitale verktøy, IT-sikkerhet, Datamigrering, Skalerbare løsninger, IT-prosjektledelse, Nettbutikk utvikling, Mobilapp utvikling, Kontinuerlig integrasjon og levering"
 };
 
