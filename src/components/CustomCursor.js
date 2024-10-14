@@ -51,8 +51,8 @@ const CustomCursor = () => {
   // Change cursor color when hovering over .Primary
   useEffect(() => {
     const primaryElements = document.querySelectorAll('.Primary');
-    const handleMouseEnter = () => setHoveringPrimary(true);
-    const handleMouseLeave = () => setHoveringPrimary(false);
+    const handleMouseEnter = () => setHoveringPrimary(false);
+    const handleMouseLeave = () => setHoveringPrimary(true);
 
     primaryElements.forEach((el) => {
       el.addEventListener('mouseenter', handleMouseEnter);
@@ -95,7 +95,7 @@ const CustomCursor = () => {
   }, []);
 
   useEffect(() => {
-    const blendElements = document.querySelectorAll('.header-left a, .title-services, .title-skills, .sub-title-skills, .about-title, .about-title-middle, .contact-title, .services-title, .projects-title');
+    const blendElements = document.querySelectorAll('.customer, .header-left a, .title-services, .title-skills, .sub-title-skills, .about-title, .about-title-middle, .contact-title, .services-title, .projects-title');
     const addHoverEffect = () => {
       if (cursorRef.current) {
         cursorRef.current.classList.add('hover-effect');
@@ -123,7 +123,7 @@ const CustomCursor = () => {
   }, []);
 
   useEffect(() => {
-    const hoverElements = document.querySelectorAll('.notfound-button, .form-button, .subject-button, .budget-button, .text-box-link, .contact, .header-middle a, .header-right a, .contact-button, .close-btn, .footer-option, .footer-social, .project-image, .indicator, .customer');
+    const hoverElements = document.querySelectorAll('.notfound-button, .form-button, .subject-button, .budget-button, .text-box-link, .contact, .header-middle a, .header-right a, .contact-button, .close-btn, .footer-option, .footer-social, .project-image, .indicator');
     const addExpandEffect = () => {
       if (cursorRef.current) {
         cursorRef.current.classList.add('expand');
@@ -166,7 +166,7 @@ const CustomCursor = () => {
         left: `${newCursorX}px`,
         top: `${newCursorY}px`,
         transform: cursorTransform,
-        backgroundColor: hoveringPrimary ? 'var(--text-color)' : 'var(--primary-color)', // Change color when hovering
+        backgroundColor: hoveringPrimary ? 'var(--primary-color)' : 'var(--text-color)', // Change color when hovering
       });
       setCursorOuterStyle({
         left: `${newCursorOuterX}px`,

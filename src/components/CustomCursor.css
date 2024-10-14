@@ -1,10 +1,10 @@
 .cursor {
   width: 20px;
   height: 20px;
-  background-color: var(--primary-color);
+  background-color: var(--text-color);
   border-radius: 50%;
   position: absolute;
-  z-index: 9998;
+  z-index: 9997;
   transition: transform 0.2s ease, background-color 1s ease, border-color 1s ease, color 1s ease;
   pointer-events: none;
 }
@@ -27,7 +27,7 @@
   border: 1px solid var(--border-color);
   border-radius: 50%;
   position: absolute;
-  z-index: 9997;
+  z-index: 9998;
   transition: transform 0.2s ease, background-color 1s ease, border-color 1s ease, color 1s ease;
   overflow-x: hidden;
   pointer-events: none;
